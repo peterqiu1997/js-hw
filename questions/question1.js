@@ -12,7 +12,9 @@
  *  Example:
  *  question1(); // returns: "betta, greyhound, scottish fold"
 *  ================================================================================ */
-var question1 = function() {};
+var question1 = function() {
+	return Object.values(object1).join(", ");
+};
 
 
 /** ================================================================================

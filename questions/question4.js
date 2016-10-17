@@ -7,7 +7,18 @@ const $ = require('jquery'); // Don't touch this!
  *
  *  You'll probably find the class active very useful. Look at `scss/index.scss`
  *  ================================================================================ */
-$('#question4');
+ var i = 1;
+ var color = 'purple';
+$('#question4').click(function() {
+	if (i % 4 === 0) {
+		console.log('click purple');
+		$('.box').css('background', 'red');
+	} else {
+		console.log('click red');
+		$('.box').css('background', 'purple');
+	}
+	i += 1;
+});
 
 /** ================================================================================
  *  Don't touch anything below here!

@@ -6,7 +6,9 @@
 var object2 = {
   first: '',
   second: '',
-  concat: function() {}
+  concat: function() {
+  	return this.first + this.second;
+  }
 }
 
 /** ================================================================================
